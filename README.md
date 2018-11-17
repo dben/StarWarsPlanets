@@ -1,6 +1,6 @@
 STAR WARS PLANETS
 ===
-This is a QBasic game I wrote between 1998 and 2001.
+This is a QBasic game I wrote between 1998 and 2002.
 The original game is basically a single player moisture farming and battle simulator (ala harvest moon)
 before I ended up getting creative and trying to build it into something much bigger with the turn based
 multiplayer "Party Edition". While the game never gained my whole dream list of features, it was a pretty
