@@ -697,15 +697,15 @@ loca:
             IF r = 4 THEN LOCATE 16, 40
             INPUT "Do you want to buy one(y/n)"; r$
             IF r$ = "y" AND cob(r, 26) >= (pb(c(r, 3), c(r, 1), c(r, 2), 5)) AND cob(pb(c(r, 3), c(r, 1), c(r, 2), 1), pb(c(r, 3), c(r, 1), c(r, 2), 4)) > 0 THEN
-            cob(r, 26) = cob(r, 26) - (pb(c(r, 3), c(r, 1), c(r, 2), 5))
-            IF ok = 1 THEN cob(pb(c(r, 3), c(r, 1), c(r, 2), 1), 26) = cob(pb(c(r, 3), c(r, 1), c(r, 2), 1), 26) + pb(c(r, 3), c(r, 1), c(r, 2), 5)
-            cob(pb(c(r, 3), c(r, 1), c(r, 2), 1), pb(c(r, 3), c(r, 1), c(r, 2), 4)) = cob(pb(c(r, 3), c(r, 1), c(r, 2), 1), pb(c(r, 3), c(r, 1), c(r, 2), 4)) - 1
-            IF ok = 1 THEN cob(r, pb(c(r, 3), c(r, 1), c(r, 2), 4)) = cob(r, pb(c(r, 3), c(r, 1), c(r, 2), 4)) + 1
-		ELSE
-            pd$ = "Can't buy"
+                cob(r, 26) = cob(r, 26) - (pb(c(r, 3), c(r, 1), c(r, 2), 5))
+                IF ok = 1 THEN cob(pb(c(r, 3), c(r, 1), c(r, 2), 1), 26) = cob(pb(c(r, 3), c(r, 1), c(r, 2), 1), 26) + pb(c(r, 3), c(r, 1), c(r, 2), 5)
+                cob(pb(c(r, 3), c(r, 1), c(r, 2), 1), pb(c(r, 3), c(r, 1), c(r, 2), 4)) = cob(pb(c(r, 3), c(r, 1), c(r, 2), 1), pb(c(r, 3), c(r, 1), c(r, 2), 4)) - 1
+                IF ok = 1 THEN cob(r, pb(c(r, 3), c(r, 1), c(r, 2), 4)) = cob(r, pb(c(r, 3), c(r, 1), c(r, 2), 4)) + 1
+            ELSE
+                pd$ = "Can't buy"
+            END IF
         END IF
     END IF
-END IF
 1000
 	IF pb(c(r, 3), c(r, 1), c(r, 2), 2) = 4 THEN
 		pd$ = "You are at " + cn(pb(c(r, 3), c(r, 1), c(r, 2), 1)) + "'s hotel"
